@@ -684,3 +684,16 @@ body {
         display: none;
     }
 }
+#print-footer {
+    font-size: 12px;    
+    font-style: italic;    
+    text-align: right;     
+    margin-top: 20px;
+}
+
+
+@media print {
+    #print-footer {
+        display: block;
+    }
+}
