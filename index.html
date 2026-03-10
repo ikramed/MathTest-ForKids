@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Test for Kids</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+    <div class="floating-shapes">
+        <div class="shape shape-1">★</div>
+        <div class="shape shape-2">●</div>
+        <div class="shape shape-3">■</div>
+        <div class="shape shape-4">▲</div>
+        <div class="shape shape-5">♦</div>
+        <div class="shape shape-6">★</div>
+        <div class="shape shape-7">●</div>
+        <div class="shape shape-8">■</div>
+    </div>
+
+    <!-- PAGE 1: Welcome -->
+    <div id="welcome-page" class="page active">
+        <div class="welcome-container">
+
+            <!-- Character -->
+            <div class="logo-container">
+                <div class="character">
+                    <div class="face">
+                        <div class="eye left"></div>
+                        <div class="eye right"></div>
+                        <div class="smile"></div>
+                        <div class="cheek left"></div>
+                        <div class="cheek right"></div>
+                    </div>
+                    <div class="body"></div>
+                </div>
+
+                <div class="speech-bubble">
+                    Let's Learn Math! 🎉
+                </div>
+            </div>
+
+            <h1 class="title">Math Test for Kids</h1>
+            <p class="subtitle">Fun math questions for children</p>
+
+            <!-- Name Input -->
+            <div class="input-container">
+                <label for="child-name">Enter your name</label>
+                <input 
+                    type="text" 
+                    id="child-name" 
+                    placeholder="Your name..." 
+                    maxlength="20"
+                >
+            </div>
+
+            <!-- Start Button -->
+          <button id="start-btn" class="btn btn-primary" disabled>
+🚀 Start Test
+</button>
+
+        </div>
+    </div>
+
+    <!-- PAGE 2: Quiz -->
+    <div id="quiz-page" class="page">
+        <div class="quiz-container">
+
+            <!-- Progress -->
+            <div class="progress-container">
+                <div class="progress-text">
+                    Question <span id="question-number">1</span> / 
+                    <span id="total-questions">10</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+            </div>
+
+            <!-- Question -->
+            <div class="question-card">
+
+                <h2 id="question-text" class="question-text">
+                    What is 2 + 3?
+                </h2>
+
+                <div id="options-container" class="options-container">
+                    <button class="option-btn" data-value="5">5</button>
+                    <button class="option-btn" data-value="6">6</button>
+                    <button class="option-btn" data-value="4">4</button>
+                    <button class="option-btn" data-value="7">7</button>
+                </div>
+
+            </div>
+
+            <!-- Feedback -->
+            <div id="feedback" class="feedback hidden">
+                <span id="feedback-text"></span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- PAGE 3: Results -->
+    <div id="results-page" class="page">
+
+        <div class="results-container">
+
+            <div class="celebration">
+                <div class="trophy">🏆</div>
+                <div class="stars">
+                    <span>⭐</span>
+                    <span>⭐</span>
+                    <span>⭐</span>
+                    <span>⭐</span>
+                    <span>⭐</span>
+                </div>
+            </div>
+
+            <h2 class="results-title">Great Job!</h2>
+
+            <p class="result-name">
+                Well done, <span id="result-name">Student</span>!
+            </p>
+
+            <div class="score-display">
+                <div class="score-circle">
+                    <span id="score-number">0</span>
+                    <span class="score-total">/10</span>
+                </div>
+                <p class="score-label">Your Score</p>
+            </div>
+
+            <p id="result-message" class="result-message">
+                You did a great job! 🌟
+            </p>
+
+            <button id="print-btn" class="btn btn-secondary">
+                🖨️ Print Result
+            </button>
+
+            <button id="play-again-btn" class="btn btn-primary">
+                🔄 Play Again
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
